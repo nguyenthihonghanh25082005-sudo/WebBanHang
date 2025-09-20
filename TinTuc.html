@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkStore</title>
+    <link rel="stylesheet" href="TrangChu.css">
+    <style>
+        .news-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #D6EDF9;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            border: 2px solid #004080;
+            border-radius: 10px; 
+        }
+        .news-main {
+            width: 70%;
+            display: flex;
+            gap: 5px;
+        }
+        .news-hot {
+            width: 60%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .news-hot img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .news-hot h2 {
+            color: #004080;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .news-hot p {
+            color: black;
+            font-size: 16px;
+        }
+        .news-list {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 5px;
+        }
+        .news-item {
+            background-color: white;
+            padding: 12px;
+            border-radius: 8px;
+            flex: 1;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .news-item h2 {
+            color: #004080;
+            font-size: 16px;
+            margin: 8px 0;
+        }
+        .news-item p {
+            color: black;
+            font-size: 13px;
+        }
+        .news-sidebar {
+            width: 25%;
+        }
+        .news-sidebar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="top-header">
+        <div class="account-cart">
+            <div class="account-item">
+                <img src="img_/blank-user-profile.png" alt="Tài khoản">
+                <span>Tài khoản</span>
+            </div>
+            <div class="cart-item">
+                <img src="img_/shopping-bag.png" alt="Giỏ hàng">
+                <span>Giỏ hàng</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-header">
+        <div class="logo">
+            <h1>MilkStore</h1>
+        </div>
+        <div class="menu">
+            <a href="TrangChu.html" class="menu-item">
+                <span>Trang Chủ</span>
+            </a>
+            <div class="menu-item dropdown-parent">
+                <a href="SanPham.html" class="menu-link">
+                    <span>Sản Phẩm</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#">Sữa Cho Bé</a>
+                    <a href="#">Sữa Dinh Dưỡng</a>
+                    <a href="#">Sữa Bé Khỏe</a>
+                    <a href="#">Sữa Dưỡng Sinh</a>
+                </div>
+            </div>
+            <div class="menu-item dropdown-parent">
+                <a href="TinTuc.html" class="menu-link">
+                    <span>Tin Tức</span>
+                </a>
+                <div class="dropdown">
+                    <a href="">Hợp Tác</a>
+                    <a href="">Thành Tựu</a>
+                </div>
+            </div>
+            <div class="menu-item dropdown-parent">
+                <a href="LienHe.html" class="menu-link">
+                    <span>Liên Hệ</span>
+                </a>
+                <div class="dropdown">
+                    <a href="">Tổng Đài</a>
+                    <a href="">Chăm Sóc Khách Hàng</a>
+                    <a href="">Tư Vấn Sản Phẩm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-header">
+        <div class="banner-container">
+            <div class="banner-slide">
+                <img src="img_/10290191.jpg" alt="Banner 1">
+            </div>
+            <div class="banner-slide">
+                <img src="img_/10294258.jpg" alt="Banner 2">
+            </div>
+            <div class="banner-slide">
+                <img src="img_/31426.jpg" alt="Banner 3">
+            </div>
+        </div>
+        <div class="banner-control prev">
+            <img src="img_/arrow (1).png" alt="Trái">
+        </div>
+        <div class="banner-control next">
+            <img src="img_/arrow (2).png" alt="Phải">
+        </div>
+    </div>
+
+    <div class="news-container">
+        <div class="news-main">
+            <div class="news-hot">
+                <img src="img_/Screenshot 2025-04-02 203316.png" alt="">
+                <h2>GIÁ SỮA DƯỠNG SINH</h2>
+                <h3> Sữa dưỡng sinh đang tăng mạnh giá vào những năm gần đây, dự đoán sẽ cán mốc 1 tỷ trong năm 4034</h3>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <img src="img_/10290191.jpg" alt="">
+                    <h2>TIN TỨC 1</h2>
+                    <p>Sốc! Quỳnh cân tất mọi bộ môn Xác suất, Toán đại cương, Toán cao cấp</p>
+                </div>
+                <div class="news-item">
+                    <img src="img_/10294258.jpg" alt="">
+                    <h2>TIN TỨC 2</h2>
+                    <p>Hạnh lười học không thèm làm bài, bắt bạn làm hộ</p>
+                </div>
+                <div class="news-item">
+                    <img src="img_/10290191.jpg" alt="">
+                    <h2>TIN TỨC 3</h2>
+                    <p>Oanh thông minh xinh đẹp mười điểm không có nhưng</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-sidebar">
+            <img src="img_/anh.png" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>MilkStore</h3>
+                <p>Địa chỉ: 122 Trường Công Định, Phường 14, Quận 3, TP Hồ Chí Minh</p>
+                <p>Email: info@milkstore.com</p>
+                <p>Hotline: 028 1234 5678</p>
+            </div>
+            <div class="footer-partners">
+                <h3>Đối tác hợp tác</h3>
+                <div class="partner-logos">
+                    <img src="img_/instagram.png" alt="Đối tác 1">
+                    <img src="img_/youtube.png" alt="Đối tác 2">
+                    <img src="img_/facebook.png" alt="Đối tác 3">
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <h3>Đăng ký nhận tin</h3>
+                <p>Nhận thông tin khuyến mãi mới nhất từ MilkStore</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Email của bạn">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("banner-slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 7000);
+        }
+
+        document.querySelector('.prev').addEventListener('click', function() {
+            slideIndex -= 2;
+            if (slideIndex < 0) {slideIndex = 2}
+            showSlides();
+        });
+
+        document.querySelector('.next').addEventListener('click', function() {
+            showSlides();
+        });
+    </script>
+</body>
+</html>

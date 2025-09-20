@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 1000px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.menu{
+    position: relative; 
+    height:50px;
+    width: 100%;
+    background-color: 	#5fa645;
+    z-index: 0; 
+}
+.menu .thongbaotaikhoan{
+    float: right;
+    padding-right: 150px;
+    display: flex;
+}
+.menu .thongbaotaikhoan .tinnhan{
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+.menu .thongbaotaikhoan .thongbao1{
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+.menu .thongbaotaikhoan .thongbao2{
+    padding-right: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: white;
+}
+.menu .thongbaotaikhoan img{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin-top: 13px;
+}
+
+
+nav{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    max-width: 250px;
+    height: 100%;
+    background: #f1f1f1;
+    display: flex;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+nav.hide{
+    min-width:15.8% ;
+    transform: translateX(-250px);
+}
+nav.hide ul {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+nav .toggle_menu{
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:	#5fa645;
+    cursor: pointer;
+    transition: linear 0.2s;
+    z-index: 100;
+}   
+nav .toggle_menu ion-icon{
+    font-size: 23px;
+    transition:  linear 0.2s;
+}
+nav .toggle_menu:hover ion-icon{
+    color: white;
+}
+.danhmuc{
+    width: 250px;
+    background-color: #333;
+}
+.danhmuc .tieude{
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 10px;
+    height: 50px;
+    background-color: 	#5fa645;
+    
+}
+.danhmuc i{
+    color: white;
+    float:right;
+    padding: 18px 35px 3px 0px;
+}
+.danhmuc #online{
+    margin: -32px 0 0 80px;
+    color: white;
+}
+.danhmuc .fa-sharp{
+    margin: -49px 120px 0 0px;
+}
+.danhmuc img{
+    margin:  10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.danhmuc #dieukhuyen{
+    color: white;
+    width:249px ;
+    height:25px ;
+    background-color: #1a2226
+}
+.danhmuc #trangchu{
+    color: white;
+    display: flex;
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color:#333;
+}
+
+#chucnang{
+    color: white;
+    display: flex;
+    margin-top: 7px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    background-color:#333;
+}
+
+    
+#chucnang a{
+    text-decoration: none;
+    color: white;
+    margin-left: 12px;
+}
+
+#chucnang:hover{
+    background-color: rgba(226, 231, 237, 0.059); 
+}
+.danhmuc p{
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.content{
+    position: absolute;
+    top:80px;
+    width: calc(100% - 250px);
+    padding: 20px;
+    transition: ease-in-out 0.5s;
+    transform: translateX(250px);
+    padding-left: 50px;
+}
+.content.expand {
+    transform: translateX(0);
+}
+.content a{
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+}
+.content .doanhthu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+}
+.content .doanhthu .thang{
+    height: 120px;
+}
+.content .doanhthu .thang b{
+    display: inline-block;  
+    font-size: 30px;
+    padding: 15px;
+}
+.content .doanhthu .thang p{
+    margin-left: 18px;
+}
+.content .doanhthu .thang .chitiet{
+    width: 100%;
+    height: 20px;
+    margin-top: 19px;
+    text-align: center;
+}
+.exit :hover{
+    color: #1a2226;
+}
+.VeTrangChu :hover{
+    color: white;
+}

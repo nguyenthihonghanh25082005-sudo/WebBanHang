@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DangNhap.css" />
+    <title>Đăng nhập tài khoản</title>
+</head>
+<body style="background-color: #fdfbfb">
+    <div class="main_TaiKhoan" style="min-height: 50vh;">
+        <div class="tittle_DangNhap">
+            <h1>Đăng Nhập</h1>
+        </div>
+        <!------INPUT---------->
+        <div class="Login">
+
+            <div class="ThongBao">
+                <h2 class="title_ThongBao" style="font-size: 20px; margin:  0 0 20px; font-weight: 600; line-height: 1.2;"></h2>
+            </div>
+
+            <form>
+                <!--Tên tài khoản-->
+                <div class="Phone_Pass">
+                    <input type="text" id="NguoiDung_Phone" placeholder="Username" class="TEXT">
+                </div>
+
+                <!--Mật khẩu-->
+                <div class="Phone_Pass">
+                    <input type="password" id="NguoiDung_PassWord" placeholder="Password" class="TEXT">
+                </div>
+
+                <!--Button Đăng nhập-->
+                <div style="margin-top: 30px; text-align: center;" class="btnDN">
+                    <div class="action_bottom">
+                        <button class="btn-DangNhap" type="submit">Đăng nhập</button>
+                    </div>
+
+                    <div class="Form_DangKy" style="color: #959898; font-weight:500">
+                        Bạn chưa có tài khoản? &nbsp;
+                        <a href="DangKy.html" style="color: #43992A;">Đăng ký</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="DangNhap.js"></script>
+<!-- <script src="DangKy.js"></script> -->
+<!-- <script src="TrangQuanTri/QuanlyTaiKhoan.js"></script> -->
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkStore</title>
+    <link rel="stylesheet" href="TrangChu.css">
+    <style>
+    .contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px auto;
+    width: 80%;
+    }
+
+    .contact-form {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .contact-form h2 {
+        color: #004080;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        color: #004080;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+        border-color: #004080;
+        outline: none;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #004080;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+    }
+
+    .submit-btn:hover {
+        background-color: #003060;
+    }
+
+    .contact-info {
+        flex: 1;
+        background-color: #f9f9f9;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h2 {
+        color: #004080;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .contact-info .contact-image {
+        width: 100%;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    </style>   
+</head>
+<body>
+    <div class="top-header">
+        <div class="account-cart">
+            <div class="account-item">
+                <img src="img_/blank-user-profile.png" alt="Tài khoản">
+                <span>Tài khoản</span>
+            </div>
+            <div class="cart-item">
+                <img src="img_/shopping-bag.png" alt="Giỏ hàng">
+                <span>Giỏ hàng</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-header">
+        <div class="logo">
+            <h1>MilkStore</h1>
+        </div>
+        <div class="menu">
+            <a href="TrangChu.html" class="menu-item">
+                <span>Trang Chủ</span>
+            </a>
+            <div class="menu-item dropdown-parent">
+                <a href="SanPham.html" class="menu-link">
+                    <span>Sản Phẩm</span>
+                </a>
+                <div class="dropdown">
+                    <a href="#">Sữa Cho Bé</a>
+                    <a href="#">Sữa Dinh Dưỡng</a>
+                    <a href="#">Sữa Bé Khỏe</a>
+                    <a href="#">Sữa Dưỡng Sinh</a>
+                </div>
+            </div>
+            <div class="menu-item dropdown-parent">
+                <a href="TinTuc.html" class="menu-link">
+                    <span>Tin Tức</span>
+                </a>
+                <div class="dropdown">
+                    <a href="">Hợp Tác</a>
+                    <a href="">Thành Tựu</a>
+                </div>
+            </div>
+            <div class="menu-item dropdown-parent">
+                <a href="LienHe.html" class="menu-link">
+                    <span>Liên Hệ</span>
+                </a>
+                <div class="dropdown">
+                    <a href="">Tổng Đài</a>
+                    <a href="">Chăm Sóc Khách Hàng</a>
+                    <a href="">Tư Vấn Sản Phẩm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-header">
+        <div class="banner-container">
+            <div class="banner-slide">
+                <img src="img_/10290191.jpg" alt="Banner 1">
+            </div>
+            <div class="banner-slide">
+                <img src="img_/10294258.jpg" alt="Banner 2">
+            </div>
+            <div class="banner-slide">
+                <img src="img_/31426.jpg" alt="Banner 3">
+            </div>
+        </div>
+        <div class="banner-control prev">
+            <img src="img_/arrow (1).png" alt="Trái">
+        </div>
+        <div class="banner-control next">
+            <img src="img_/arrow (2).png" alt="Phải">
+        </div>
+    </div>
+    
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Thông điệp</label>
+                    <input id="message" name="message" rows="5" placeholder="Nhập thông điệp của bạn" required></input>
+                </div>
+                <button type="submit" class="submit-btn">Gửi</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Thông Tin Liên Hệ</h2>
+            <p><strong>Địa chỉ:</strong> 122 Trường Công Định, Phường 14, Quận 3, TP Hồ Chí Minh</p>
+            <p><strong>Điện thoại:</strong> 028 1234 5678</p>
+            <p><strong>Email:</strong> info@milkstore.com</p>
+            <img src="img_/BANNER.jpg" alt="Contact Image" class="contact-image">
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>MilkStore</h3>
+                <p>Địa chỉ: 122 Trường Công Định, Phường 14, Quận 3, TP Hồ Chí Minh</p>
+                <p>Email: info@milkstore.com</p>
+                <p>Hotline: 028 1234 5678</p>
+            </div>
+            <div class="footer-partners">
+                <h3>Đối tác hợp tác</h3>
+                <div class="partner-logos">
+                    <img src="img_/instagram.png" alt="Đối tác 1">
+                    <img src="img_/youtube.png" alt="Đối tác 2">
+                    <img src="img_/facebook.png" alt="Đối tác 3">
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <h3>Đăng ký nhận tin</h3>
+                <p>Nhận thông tin khuyến mãi mới nhất từ MilkStore</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Email của bạn">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("banner-slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 7000);
+        }
+
+        document.querySelector('.prev').addEventListener('click', function() {
+            slideIndex -= 2;
+            if (slideIndex < 0) {slideIndex = 2}
+            showSlides();
+        });
+
+        document.querySelector('.next').addEventListener('click', function() {
+            showSlides();
+        });
+    </script>
+</body>
+</html>

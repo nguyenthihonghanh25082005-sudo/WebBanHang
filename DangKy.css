@@ -1,0 +1,93 @@
+.main_TaiKhoan{
+    width: 58%;
+    height: 490px;
+    max-width: 620px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    padding: 25px 30px 30px;
+    border: 2.3px solid #5fa645;
+    border-radius: 25px 0;
+}
+.main_TaiKhoan .tittle_DangKy{
+    margin-bottom: 10px;
+}
+
+.main_TaiKhoan .tittle_DangKy h1 {
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px 0;
+    line-height: initial;
+}
+.main_TaiKhoan .tittle_DangKy h1:after{
+    content: "";
+    background: #000;
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 20px auto;
+}
+
+.main_TaiKhoan .Login .Phone_Pass{
+    margin-bottom: 25px;
+}
+.main_TaiKhoan .Login input[type=password], .Login input[type=text]{
+    width: 100%;
+    height: 50px;
+    color: #5c5c5c;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background: #ededed;
+    outline: none;
+    appearance: none;
+    border-radius: 8px;
+}
+
+.main_TaiKhoan .Login .btnDK .action_bottom, .main_TaiKhoan .Login .btnDK .QuayLai{
+
+    vertical-align: middle;
+    margin: 0 12px;
+    padding: 0;
+}
+.main_TaiKhoan .Login .btnDK .action_bottom .btn-DangKy{
+    border-radius: 5px;
+    padding: 0 30px;
+    height: 45px;
+    line-height: 45px;
+    text-transform: uppercase; /*Định dạng cả cụm Chữ in hoa*/
+    font-weight: 600;
+    background: #5fa645;
+    cursor: pointer;
+    border: 1px solid #5fa645;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.come-back:hover{
+    color:#225711;
+    font-weight: bold;
+}
+
+.tittle_DangKy:before, .tittle_DangKy:after, .Phone_Pass:before, .Phone_Pass:after, .btnDK:before, .QuayLai:before{
+    display: table;
+    content: "";
+}
+:after, :before{
+    box-sizing: border-box;
+}
+input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    font: inherit;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: #5fa645;
+    background-color: transparent;
+}

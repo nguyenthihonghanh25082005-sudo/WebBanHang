@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="TrangChuAdmin.css">
+    <title>Admin - Trang Chủ</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="menu">
+        <div class="thongbaotaikhoan">
+            <ion-icon class="tinnhan" name="mail-unread-outline"></ion-icon>
+            <ion-icon class="thongbao1" name="notifications-outline"></ion-icon>
+            <ion-icon class="thongbao2" name="flag-outline"></ion-icon>
+            <img src="img_/admin.jpg" alt=""> 
+            <span style="color: white; margin-top: 16px; margin-left: 7px;">Hoàng Hồng Hạnh</spand>
+            <!--Đăng xuất-->
+            <a href="DangNhap.html" style="color: white;" class="exit">
+                <i style="margin-left: 20px;" class="fa-solid fa-right-from-bracket"></i>
+            </a>
+        </div>
+    </div>
+    <nav>
+        <div class="toggle_menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="danhmuc">
+            <p  class="tieude">Admin</p>
+            <div class="inforadmin">
+                <img src="img_/admin.jpg" alt="">
+                <i >Hoàng Hồng Hạnh</i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #15e565;"></i>
+                <p id="online"> Online</p>
+            </div><br>
+            <div id="dieukhuyen">
+                <p>Điều khiển</p>
+            </div><br>
+
+            <div style="background-color: #5fa645;" id="chucnang">
+                <ion-icon style="padding: 3px 0 0 20px; " name="calendar-clear-outline"></ion-icon>
+                <a href="TrangChuAdmin.html">Trang chủ</a>
+            </div>
+
+            <div  id="chucnang">
+                <i class="fa-regular fa-chart-bar" style="padding: 3px 0 0 20px;"></i>
+                <a href="QLyLoaiSP.html">Quản lý loại sữa</a>
+            </div>
+
+            <div  id="chucnang">
+                <ion-icon style="padding: 3px 0 0 20px;" name="file-tray-full-outline"></ion-icon>
+                <a href="QuanlySanPham.html">Quản lý sản phẩm sữa</a>
+            </div>
+
+
+            <div id="chucnang">
+                <ion-icon style="padding: 3px 0 0 20px;" name="people-circle-outline"></ion-icon>
+                <a href="QuanlyTaiKhoan.html">Quản lí tài khoản</a>
+            </div>
+
+        </div>
+    </nav>
+    <section class="content">
+        <h2>CỬA HÀNG BÁN SỮA HHH</h2><br><br>
+
+        <div class="doanhthu1" style="float: left;">
+            <img  style="width: 20%; height: 40%;" src="img_/Logo.png"/>
+        </div>
+
+        <div style="float: left; width: 620px; margin-top: 10px;">
+            <div style="background: rgb(237, 137, 154); height: 130px; margin-top: 25px; text-align: center;line-height: 8;" class="VeTrangChu">
+                <a  href="TrangChu.html">
+                    <i class="fa-solid fa-house-user" style="font-size: 40px; line-height: 3;"></i>
+                    <b style="padding-left: 20px; font-size: 17px;">Đi tới Trang Chủ phía người dùng</b>
+                </a>
+            </div>
+            
+        </div>
+
+    </section>
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="QuanlyAdmin.js"></script>
+</html>

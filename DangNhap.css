@@ -1,0 +1,94 @@
+.main_TaiKhoan {
+    width: 55%;
+    height: 320px;
+    max-width: 620px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+    padding: 25px 30px 30px;
+    border: 2.3px solid #5fa645;
+    border-radius: 25px 0;
+}
+.main_TaiKhoan .tittle_DangNhap{
+    margin-bottom: 10px;
+}
+
+.main_TaiKhoan .tittle_DangNhap h1 {
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px 0;
+    line-height: initial;
+}
+.main_TaiKhoan .tittle_DangNhap h1:after{
+    content: "";
+    background: #000;
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 20px auto;
+}
+
+.main_TaiKhoan .Login .Phone_Pass{
+    margin-bottom: 25px;
+}
+.main_TaiKhoan .Login input{
+    width: 100%;
+    height: 50px;
+    color: #5c5c5c;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background: #ededed;
+    outline: none;
+    appearance: none;
+    border-radius: 8px;
+}
+
+.main_TaiKhoan .Login .btnDN .action_bottom, .main_TaiKhoan .Login .btnDN .Form_DangKy{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+    padding: 0;
+}
+.main_TaiKhoan .Login .btnDN .action_bottom .btn-DangNhap{
+    border-radius: 5px;
+    padding: 0 30px;
+    height: 45px;
+    line-height: 45px;
+    text-transform: uppercase; /*Định dạng cả cụm Chữ in hoa*/
+    font-weight: 600;
+    background: #5fa645;
+    cursor: pointer;
+    border: 1px solid #5fa645;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.Form_DangKy a:hover{
+    color: #225711;
+    font-weight: bold;
+}
+
+
+.tittle_DangNhap:before, .tittle_DangNhap:after, .Phone_Pass:before, .Phone_Pass:after, .btnDN:before{
+    display: table;
+    content: "";
+}
+:after, :before{
+    box-sizing: border-box;
+}
+input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    font: inherit;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: #5fa645;
+    background-color: transparent;
+}
